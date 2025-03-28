@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track gold and silver price history from 2000 to 2024, including the gold/silver ratio. Svea Gold offers interactive charts for precious metal trends.">
+    <meta name="keywords" content="gold price history, silver price chart, gold silver ratio, precious metals prices, gold prices 2000-2024, Svea Gold">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Svea Gold">
+    <title>Gold & Silver Price History (2000-2024) | Svea Gold</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Svea Gold</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active" title="Svea Gold Home">Home</a>
+        <a href="gold-history.html" title="History of Gold as Currency">Gold's History</a>
+        <a href="why-buy-gold.html" title="Why Buy Gold">Why Buy Gold</a>
+        <a href="contact.html" title="Contact">Contact</a>
+    </nav>
+
+    <main>
+        <h1>Gold & Silver Price History (2000-2024)</h1>
+        <p>Explore the price trends of gold and silver from 2000 to 2024, including the gold/silver ratio. Use the interactive chart below to analyze precious metals prices over time, provided by Svea Gold.</p>
+        <section>
+            <div class="toggle-buttons">
+                <button id="goldButton" class="active" aria-label="Show Gold Price History">Gold Price History</button>
+                <button id="silverButton" aria-label="Show Silver Price History">Silver Price History</button>
+                <button id="ratioButton" aria-label="Show Gold/Silver Ratio">Gold/Silver Ratio</button>
+            </div>
+            <div class="chart-container">
+                <canvas id="priceChart" aria-label="Interactive chart displaying gold and silver price history from 2000 to 2024"></canvas>
+            </div>
+            <p style="font-size: 0.9em; color: #666;">Chart data reflects annual high and low prices in USD per ounce for gold and silver, and the gold/silver ratio from 2000 to 2024.</p>
+        </section>
+
+        <section>
+            <h2>Understanding Gold and Silver Price Trends</h2>
+            <p>Gold and silver have long been cornerstones of wealth preservation, with prices fluctuating based on economic conditions, inflation, and global demand. From 2000 to 2024, gold prices soared from a low of $263.80/oz to a high of $2,785.87/oz, reflecting its role as a safe-haven asset during crises like the 2008 financial crash and 2020 pandemic. Silver, often called "the poor man's gold," followed a similar trajectory, peaking at $34.75/oz in 2024 after dipping to $4.07/oz in 2001.</p>
+            <p>The gold/silver ratio, which measures how many ounces of silver equal one ounce of gold, offers insights into relative value. In 2000, the ratio hovered around 64.5, but it spiked to 125.8 in 2020 during economic uncertainty, showing silver’s volatility compared to gold’s stability. By 2024, the ratio settled at 91.4, suggesting a potential undervaluation of silver—a signal for investors.</p>
+            <p>Why track these trends? For investors in Stockholm or globally, understanding historical data helps predict future movements. Gold’s upward trend since 2000 aligns with rising inflation and currency devaluation, while silver’s industrial uses (e.g., solar panels, electronics) drive its demand. Use our chart to toggle between gold prices, silver prices, and the ratio, and see how these metals have shaped financial markets over two decades.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Svea Gold<br>
+            <a href="mailto:info@sveagold.com" style="color: white;">info@sveagold.com</a><br>
+            Stockholm, Sweden<br>
+        </p>
+        <p>© 2025 Svea Gold. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Gold and Silver Price History (2000-2024)",
+        "description": "Annual high and low prices of gold and silver, and the gold/silver ratio from 2000 to 2024, presented in an interactive chart by Svea Gold.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Svea Gold",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://sveagold.com/logo.png"
+            }
+        },
+        "datePublished": "2025-03-27",
+        "temporalCoverage": "2000-01-01/2024-12-31",
+        "keywords": "gold prices, silver prices, gold silver ratio",
+        "mainEntityOfPage": "https://sveagold.com/index.html"
+    }
+    </script>
+</body>
+</html>

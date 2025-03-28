@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+header {
+    background-color: #4B0082;
+    color: #FFD700;
+    text-align: center;
+    padding: 2rem;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #FFD700;
+    padding: 1rem;
+    text-align: center;
+    height: 60px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #4B0082;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #492c6c2f;
+    color: #2d0549;
+}
+
+nav a.active {
+    background-color: #38214923;
+    color: #2d0549;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+footer {
+    background-color: #4B0082;
+    color: #FFD700;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    margin: 0 0 1rem 0;
+    color: #FFD700;
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+ul {
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+    list-style-type: square;
+    color: #000000;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem;
+        height: 80px;
+    }
+    nav {
+        padding: 0.75rem;
+        height: 50px;
+    }
+    main {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Why Buy Gold Page */
+img.gold-image {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border: 2px solid #FFD700;
+}
+
+/* Index Page */
+section {
+    margin-bottom: 2rem;
+}
+
+#priceChart {
+    max-width: 100%;
+    width: 100%; /* Ensure it takes full container width */
+    height: 400px; /* Default height for larger screens */
+    box-sizing: border-box; /* Include border in size calculations */
+}
+
+@media (max-width: 600px) {
+    #priceChart {
+        height: 250px; /* Reduce height on small screens for better fit */
+    }
+    .toggle-buttons {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap on very small screens */
+        justify-content: center;
+    }
+    .toggle-buttons button {
+        padding: 0.4rem 0.8rem; /* Slightly smaller padding */
+        margin: 0.25rem; /* Tighter spacing */
+        font-size: 0.9rem; /* Smaller text */
+    }
+}
+
+.toggle-buttons {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.toggle-buttons button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    background-color: #00000023;
+    border: 1px solid #ece9f0;
+    border-radius: 4px;
+    color: #000000;
+    font-family: 'Georgia', serif;
+    transition: background-color 0.3s;
+}
+
+.toggle-buttons button.active {
+    background-color: #FFD700;
+    border-color: #fdfdfd;
+    color: #000000;
+}
+
+.toggle-buttons button:hover {
+    background-color: #ffd900b7;
+}
+
+/* Gold History Page */
+main.history-main {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+    background-color: #FFFFFF;
+}
+
+.timeline-container {
+    width: 30%;
+    padding-right: 2rem;
+}
+
+.article-container {
+    width: 70%;
+    padding-left: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #FFD700;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.1rem;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    border: 1px solid #4B0082;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    color: #FFD700;
+}
+
+.timeline-item a {
+    color: #4B0082;
+    text-decoration: none;
+}
+
+.timeline-item a:hover {
+    color: #FFD700;
+}
+
+.article-section {
+    margin-bottom: 2rem;
+}
+
+.article-section h2 {
+    color: #FFD700;
+}
+
+/* Contact Page */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: #4B0082;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+    background-color: #F5F5F5;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #FFD700;
+    border: 1px solid #4B0082;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    color: #4B0082;
+    font-family: 'Georgia', serif;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C0C0C0;
+}

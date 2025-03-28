@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Svea Gold for inquiries about gold and silver prices, investment tips, or general questions. Based in Stockholm, Sweden.">
+    <meta name="keywords" content="contact Svea Gold, gold investment contact, Stockholm gold dealer, Svea Gold support">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Svea Gold">
+    <title>Contact Us | Svea Gold</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Svea Gold</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" title="Svea Gold Home">Home</a>
+        <a href="gold-history.html" title="History of Gold as Currency">Gold's History</a>
+        <a href="why-buy-gold.html" title="Why Buy Gold">Why Buy Gold</a>
+        <a href="contact.html" class="active" title="Contact Us">Contact</a>
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Have questions about gold and silver prices, investing, or our services? Reach out to Svea Gold! We’re based in Stockholm, Sweden, and happy to assist.</p>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            Svea Gold<br>
+            info@sveagold.com<br>
+            Stockholm, Sweden<br>
+        </p>
+        <p>© 2025 Svea Gold. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Svea Gold",
+        "description": "Contact Svea Gold for inquiries about gold and silver prices, investment tips, or general questions.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Svea Gold",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://sveagold.com/logo.png"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Gold Street",
+                "addressLocality": "Stockholm",
+                "addressCountry": "Sweden"
+            },
+            "email": "info@sveagold.com"
+        },
+        "mainEntityOfPage": "https://sveagold.com/contact.html"
+    }
+    </script>
+</body>
+</html>
